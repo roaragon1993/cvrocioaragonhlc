@@ -281,6 +281,9 @@ a.active {
 /* home section
 ==================================================*/
 
+
+/*Foto ppal -> EDITAR*/
+
 #home {
     background: url(../img/home-bg-2.jpg);
     background-size: cover;
@@ -309,14 +312,23 @@ a.active {
     margin: 0 auto;
 }
 
-.about-border {
+.roSinfondo {
     position: absolute;
-    border: 10px solid #425BB5;
     width: 400px;
     height: 400px;
     top: 40px;
-    left: 50px;
-    z-index: 1
+    left: 20px;
+    z-index: 1;
+}
+
+.about-border {
+    position: absolute;
+    border: 10px solid pink;
+    width: 400px;
+    height: 400px;
+    top: 40px;
+    left: 85px;
+    z-index: 1;
 }
 
 
