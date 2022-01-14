@@ -1,0 +1,263 @@
+/*Rocío Aragón Escamilla
+       2 DAW*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    height: 90%;
+    padding-left: 8%;
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    align-content: center;
+}
+
+.contenedor-juego {
+    height: 850px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.juego-titulo,
+.juego-info {
+    text-align: left;
+    color: white;
+}
+
+.juego-cuadricula {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 0;
+    border: 10px outset rgba(201, 70, 173, 0.801);
+}
+
+.cuadro {
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid rgb(0, 107, 107);
+    margin: 0.5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color ease-in 0.2s;
+    background-position: center;
+    background-size: cover;
+}
+
+.cuadro:hover {
+    background-color: white;
+}
+
+.btnJugar {
+    display: inline-flex;
+    padding: 1rem 1rem;
+    background: rgb(228, 35, 163);
+    color: white;
+    cursor: pointer;
+    justify-content: center;
+    font-weight: bold;
+    transition: color ease-out 0.3s;
+    border-radius: 4px;
+}
+
+.btnJugar:hover {
+    background: white;
+    color: rgb(231, 89, 184);
+    border: 1px solid rgb(231, 89, 184);
+}
+
+.btnJugarDesactivado {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(0, 94, 94);
+    border: none;
+    color: beige;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.titulo {
+    width: 90%;
+    height: 100px;
+}
+
+
+/*Enlaces*/
+
+.enlace {
+    color: white;
+    text-decoration: none;
+}
+
+.enlace:hover {
+    color: #0F2027;
+    cursor: pointer;
+}
+
+
+/*Contenedor 1*/
+
+.contenedor1 {
+    width: 100%;
+    padding: 5%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+
+/*FORMULARIO*/
+
+.formularionombres {
+    background-color: rgba(243, 103, 213, 0.199);
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.formularionombres:hover {
+    background-color: rgba(247, 78, 225, 0.521);
+}
+
+
+/*Botón del formulario*/
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(0, 56, 56);
+    border: none;
+    color: beige;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 90px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    padding-right: 25px;
+    opacity: 1;
+    right: 0;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+}
+
+
+/*Cuadro tematicas*/
+
+.tematicas {
+    background-color: rgba(243, 103, 213, 0.199);
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    width: 25%;
+    height: 50%;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.tematicas:hover {
+    background-color: rgba(247, 78, 225, 0.521);
+}
+
+#errores {
+    float: left;
+    background: #FF6633;
+    width: 325px;
+}
+
+
+/*Marcador y ranking*/
+
+.contenedor {
+    width: 100%;
+    padding: 5%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.marcador {
+    background-color: rgba(243, 103, 213, 0.199);
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    width: 25%;
+    height: 120%;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.marcador:hover {
+    background-color: rgba(247, 78, 225, 0.521);
+}
+
+.tablaRanking,
+th,
+tr,
+td {
+    border-collapse: collapse;
+    border: 1px solid aliceblue;
+    margin-left: 32%;
+}
+
+.ranking {
+    background-color: rgba(243, 103, 213, 0.199);
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    width: 25%;
+    height: 110%;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.ranking:hover {
+    background-color: rgba(247, 78, 225, 0.521);
+}

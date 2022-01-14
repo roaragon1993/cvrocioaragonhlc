@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Rocío Aragon Escamilla
+2 DAW-->
+
+<head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tres en raya</title>
+</head>
+
+<body>
+    <div class="contenedor-juego">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--LOGO-->
+        <div class="titulo">
+            <img src="img/tItulo.png"></img>
+        </div>
+        <br>
+        <br>
+
+        <!--MARCADOR Y RANKING-->
+        <div class="contenedor">
+            <div class="marcador">
+                <br>
+                <h2>Marcador</h2>
+                <br>
+                <ul class="jugadores" style="list-style: none;">
+                    <li>Jugador 1: <span id="puntosJ1"></span></li>
+                    <br>
+                    <li>Jugador 2: <span id="puntosJ2"></span></li>
+                </ul>
+            </div>
+
+            <div class="ranking">
+                <br>
+                <h2>Ranking</h2>
+                <br>
+                <table class="tablaRanking" id="ranking"></table>
+            </div>
+        </div>
+
+        <!-- FORMULARIO PARA NOMBRES-->
+        <div class="contenedor1">
+            <div class="formularionombres">
+                <div id="form">
+                    <br>
+                    <br>
+                    <!--Pedimos los nombres por el form-->
+                    <h2>Jugador 1: </h2>
+                    <br>
+                    <input id="j1" type="text" rows="20" cols="20" maxlength="60" required/><br>
+                    <br>
+                    <br>
+                    <h2>Jugador 2: </h2>
+                    <br>
+                    <input id="j2" type="text" rows="20" cols="20" maxlength="60" required/><br>
+                    <br>
+                    <br>
+                    <!-- Cada vez que pulsemos el botón con el oclick nos iremos a la función-->
+                    <input class="button" type="submit" value="Enviar" id="enviar" />
+                    <input class="button" type="reset" value="Borrar" id="borrar" />
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <!--TEMÁTICAS-->
+            <div class="tematicas">
+                <div id="temas">
+                    <br>
+                    <br>
+                    <h3 class="enlace" id="enlaceClasico">Clasico</h3>
+                    <br>
+                    <h3 class="enlace" id="enlaceHP">Harry Potter</h3>
+                    <br>
+                    <h3 class="enlace" id="enlaceDerbi">Derbi</h3>
+                    <br>
+                    <h3 class="enlace" id="enlaceSW">Star Wars</h3>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <!--JUEGO-->
+            <div class="juego3R">
+                <div id="juego-info" class="juego-info"></div>
+                <br>
+                <div class="juego-cuadricula">
+                    <div class="cuadro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro"></div>
+                    <div class="cuadro"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--BOTON DE VVOLVER A JUGAR-->
+        <div id="btnJugar" class="btnJugar">
+            Volver a jugar
+        </div>
+
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</body>
+
+</html>
